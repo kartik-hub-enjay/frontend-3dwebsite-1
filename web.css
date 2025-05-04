@@ -63,6 +63,7 @@ nav a{
     transition: color 0.2s ease;
     text-decoration: none;
     color:inherit ;
+    z-index: 1000;
 }
 nav a:hover{
     color: #a7a7a7;
@@ -77,6 +78,7 @@ nav a:hover{
     font-weight: 500;
     transition:  background-color 0.2s ease;
     cursor: pointer;
+    z-index: 1000;
 }
 .signin:hover{
     background-color: white;
@@ -176,4 +178,71 @@ main{
 }
 .btn_sigin_main:hover{
     background-color: gray;
+}
+.robo-3d{
+   position: absolute;
+   top: 0;
+   right: -20%;
+}
+
+/* tablet responsive */
+
+@media (max-width: 1300px){
+    header{
+        padding: 1rem 0.5rem;
+    }
+    .content{
+        margin-top: 85%;
+    }
+    .robo-3d{
+        scale: 0.7;
+        top: -20%;
+        right: 2%;
+    }
+}
+/* mobile responsive */
+
+@media (max-width:868px){
+    header{
+        padding: 1rem 0.1rem;
+
+    }
+    nav{
+        display: none;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    .signin{
+        padding: 0.6rem 1.5rem;
+    }
+    .content{
+        margin-top: 25rem;
+    }
+    .robo-3d{
+      scale: 0.5;
+        top: -25%;
+        right: 0;
+    }
+    .content{
+        max-width: 30rem;
+        margin-left: 10%;
+    }
+    .tag_box{
+        width: 12rem;
+    }
+    .content h1{
+        font-size: 2.5rem;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    .btn_get_start{
+        font-size: 0.8rem ;
+        padding: 0.8rem 1rem;
+    }
+    .btn_sigin_main{
+        font-size: 0.8rem ;
+        padding: 0.8rem 2rem;
+    }
 }

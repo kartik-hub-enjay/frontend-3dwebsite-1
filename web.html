@@ -5,37 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <script src="web.js"></script>
+    
     <img class="image-gredient" src="gradient.png" alt="">
     <div class="layer-blur" ></div>
     <div class="container">
         <header>
-            <h1 class="logo">MCODE</h1>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">MCODE</h1>
             <nav>
-                <a href="#">COMPANY</a>
-                <a href="#">FEATURES</a>
-                <a href="#">RESOURCES</a>
-                <a href="#">DOCS</a>
+                <a data-aos="fade-down" data-aos-duration="1500" href="#">COMPANY</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="#">FEATURES</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="#">RESOURCES</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="#">DOCS</a>
             </nav>
-            <button class="signin">SignIn</button>
+            <button data-aos="fade-down" data-aos-duration="1500" class="signin">SignIn</button>
         </header>
         
         <main>
             <div class="content">
-                <div class="tag_box">
+                <div data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="1500" class="tag_box">
                     <div class="tag">INTRODUCING &wedbar;</div>
                 </div>
-                <h1>EMAIL FOR<BR>DEVELOPER</BR></h1>
-                <P class="description">the best way to reach humans instead of spam folders, deliver transactional and marketing emails at scale.</P>
+                <h1 data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="2000">EMAIL FOR<BR>DEVELOPER</BR></h1>
+                <P data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="2500" class="description">the best way to reach humans instead of spam folders, deliver transactional and marketing emails at scale.</P>
     
-                <div class="buttons">
+                <div data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="3000" class="buttons">
                     <a href="#" class="btn_get_start">Documentation &gt;</a>
                     <a href="#" class="btn_sigin_main">Getstarted &gt;</a>
                 </div>
             </div>
         </main>
+
+        <spline-viewer data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" data-aos-duration="3000" class="robo-3d" url="https://prod.spline.design/oUx7EJPuPXNQkopD/scene.splinecode"></spline-viewer>
     </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 </html>
